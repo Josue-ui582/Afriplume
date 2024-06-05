@@ -1,0 +1,33 @@
+.nav{
+    background: rgba(0, 25, 40, 1);
+    width: 890px;
+    height: 75px;
+    padding: 0px 64px 0px 64px;
+    gap: 420px;
+    opacity: 0px;
+    margin: 0;
+}
+nav > div > .logo{
+    width: 163px;
+    height: 55px;
+    gap: 0px;
+    opacity: 0px;
+    float: left;
+}
+nav > div > ul{
+    display: flex;
+    width: 496pxpx;
+    height: 30pxpx;
+    gap: 30px;
+    opacity: 0px;
+}
+nav > div > ul > li{
+    list-style-type: none;
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
