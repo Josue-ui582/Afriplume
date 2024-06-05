@@ -25,6 +25,13 @@ function App() {
               </li>
             </ul>
           </div>
+          <div>
+            <ul>
+              <li>
+                <img src="./public/" alt="" />
+              </li>
+            </ul>
+          </div>
       </nav>
     </>
   )
