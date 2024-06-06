@@ -1,33 +1,250 @@
+
 .nav{
+    position: fixed;
+    display: flex;
     background: rgba(0, 25, 40, 1);
     width: 890px;
     height: 75px;
     padding: 0px 64px 0px 64px;
-    gap: 420px;
     opacity: 0px;
     margin: 0;
+}
+.parent{
+    display: flex;
+    width: 563.35px;
+    height: 55px;
+    padding: 20px 44px 20px 44px;
+    opacity: 0px;
+
 }
 nav > div > .logo{
     width: 163px;
     height: 55px;
-    gap: 0px;
     opacity: 0px;
     float: left;
 }
-nav > div > ul{
+.list{
+    width: 696px;
+    opacity: 0px;
+}
+.list > ul{
     display: flex;
-    width: 496pxpx;
-    height: 30pxpx;
+    list-style-type: none;
+    opacity: 0px;
+}
+.list > ul > li{
+    color: white;
+    margin: 0 13px;
+    font-size: 11px;
+}
+.icons-profil{
+    display: flex;
+    width: 179.35px;
+    height: 46px;
+    opacity: 0px;
+}
+.icons-profil > .icons > ul{
+    display: flex;
+    list-style-type: none;
+    width: 97.35px;
+    height: 24px;
+    opacity: 0px;
+
+}
+.icons-profil > .icons > ul > li > i{
+    color: white;
+    padding: 0 5px;
+}
+.profil i{
+    color: black;
+}
+.profil{
+    display: flex;
+}
+.profil > button > img{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.profil button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.profil button i{
+    margin-left: 5px;
+}
+main{
+    width: 100%;
+    margin-left: 50px;
+    height: 4,885.86px;
+    margin-top: 112px;
     gap: 30px;
     opacity: 0px;
 }
-nav > div > ul > li{
-    list-style-type: none;
-    color: white;
-    font-size: 16px;
+.mini-page{
+    width: 888px;
+    height: 207px;
+    gap: 13px;
+    opacity: 0px;
+    text-align: center;
+}
+.headline-text{
+    width: 100%;
+    height: 146px;
+    gap: 0px;
+    opacity: 0px;
+    text-align: center;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    color: rgba(10, 167, 237, 1);
+}
+.headline-text > span{
+    color:  rgba(247, 212, 8, 1);
+}
+.body-text{
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+    text-align: center;
     font-weight: 400;
-    line-height: 19.5px;
-    justify-content: center;
-    padding: 5px 0 5px 0;
-    margin-top: 20px;
+    line-height: 24px;
+    font-size: 20px;
+}
+/*.rectangle{
+    width: 112px;
+    height: 9px;
+    gap: 0px;
+    opacity: 0px;
+    background:  rgba(247, 212, 8, 1);
+    margin-top: 250px;
+    margin-left: 275px;
+}*/
+.footer{
+    margin-top: 100px;
+}
+.search-rubrique{
+    display: flex;
+}
+.search-livre{
+    margin: 0 75px;
+    display: flex;
+}
+.search-livre >  button {
+    color: rgb(10, 167, 237, 1);
+    border-color: rgb(10, 167, 237, 1);
+}
+.search-livre > .input{
+    margin: 0 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 8px 10px 0;
+}
+.search-livre > .input:hover{
+    border: none;
+}
+.search-livre > .input > input{
+    border: none;
+}
+.search-livre > .input > i{
+    padding-top: 5px;
+}
+.search-rubrique > .space-ecrivains > button{
+    margin: 0 5px;
+}
+.search-rubrique > .space-ecrivains > .genre{
+    background-color: rgb(10, 167, 237, 1);
+    color: white;
+}
+.search-rubrique > .space-ecrivains > .ecrire{
+    background-color: rgba(247, 212, 8, 1);
+    color: rgb(20, 19, 19);
+}
+section{
+    background-color: rgba(0, 25, 40, 1);
+    width: 100%;
+    padding: 0px 29.8px 0px 29.8px;
+    height: 100vh;
+}
+section > main {
+    background-repeat: no-repeat;
+    background-image: url(../public/photo.jpg);
+    background-size: 400px;
+    background-position: center;
+}
+.section-1 > p{
+    width: 246px;
+    height: 30px;
+    padding: 3px 15px 3px 15px;
+    gap: 10px;
+    border: 0px 0px 0px 4px;
+    opacity: 0px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.section-1 > p::before{
+    content: '';
+    background-color: rgba(247, 212, 8, 1);
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin-right: 4px;
+}
+section > div{
+    height: 50vh;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    background-image: url(../public/photo.jpg);
+    background-position: center -200px;
+    background-size: 800px;
+    background-repeat: no-repeat;
+}
+section > div > h1{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56.4px;
+    text-align: left;
+    color: white;
+    margin-left: 100px;
+}
+section > div > a.show-more{
+    position: relative;
+    left: 700px;
+    top: 90px;
+    background: transparent;
+    color: rgba(247, 212, 8, 1);
+    border: 1px solid rgba(247, 212, 8, 1);
+    padding: 5px;
+    border-radius: 10px;
+}
+.section-1 > div > div > a.humore{
+    margin-left: 10px;
+    border: 1px solid rgba(247, 212, 8, 1);
+    border-radius: 10px;
+    padding: 5px;
+    color: rgba(247, 212, 8, 1);
+    font-weight: 600;
+}
+.section-1 > div > div.flex{
+    display: flex;
+    margin-top: -25px;
+    align-items: center;
+}
+.section-1 > div > div > svg {
+    margin-left: 100px;
+    width: 15px;
+    margin-right: 10px;
+    height: 15px;
+}
+.section-1 > div > div > span{
+    font-weight: 900;
+    color: gray;
+}
+section > p{
+    margin-left: 35px;
 }
