@@ -1,4 +1,6 @@
 
+/*Style de la partie nav de la page*/
+
 .nav{
     position: fixed;
     display: flex;
@@ -8,7 +10,9 @@
     padding: 0px 64px 0px 64px;
     opacity: 0px;
     margin: 0;
+    z-index: 1000;
 }
+
 .parent{
     display: flex;
     width: 563.35px;
@@ -17,65 +21,78 @@
     opacity: 0px;
 
 }
+
 nav > div > .logo{
     width: 163px;
     height: 55px;
     opacity: 0px;
     float: left;
 }
+
 .list{
     width: 696px;
     opacity: 0px;
 }
+
 .list > ul{
     display: flex;
     list-style-type: none;
     opacity: 0px;
 }
+
 .list > ul > li{
     color: white;
     margin: 0 13px;
     font-size: 11px;
 }
+
 .icons-profil{
     display: flex;
     width: 179.35px;
     height: 46px;
     opacity: 0px;
 }
+
 .icons-profil > .icons > ul{
     display: flex;
     list-style-type: none;
     width: 97.35px;
     height: 24px;
     opacity: 0px;
-
 }
+
 .icons-profil > .icons > ul > li > i{
     color: white;
     padding: 0 5px;
 }
+
 .profil i{
     color: black;
 }
+
 .profil{
     display: flex;
 }
+
 .profil > button > img{
     border-radius: 100%;
     width: 30px;
     height: 30px;
     margin-right: 5px;
 }
+
 .profil button{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
 }
+
 .profil button i{
     margin-left: 5px;
 }
+
+/*Style de la partie main de la page*/
 main{
     width: 100%;
     margin-left: 50px;
@@ -84,6 +101,7 @@ main{
     gap: 30px;
     opacity: 0px;
 }
+
 .mini-page{
     width: 888px;
     height: 207px;
@@ -91,6 +109,7 @@ main{
     opacity: 0px;
     text-align: center;
 }
+
 .headline-text{
     width: 100%;
     height: 146px;
@@ -100,11 +119,13 @@ main{
     font-size: 61px;
     font-weight: 700;
     line-height: 73px;
-    color: rgba(10, 167, 237, 1);
+    color: #0aa7ed;
 }
+
 .headline-text > span{
     color:  rgba(247, 212, 8, 1);
 }
+
 .body-text{
     height: 48px;
     gap: 0px;
@@ -114,6 +135,7 @@ main{
     line-height: 24px;
     font-size: 20px;
 }
+
 /*.rectangle{
     width: 112px;
     height: 9px;
@@ -126,55 +148,66 @@ main{
 .footer{
     margin-top: 100px;
 }
+
 .search-rubrique{
     display: flex;
 }
+
 .search-livre{
     margin: 0 75px;
     display: flex;
 }
+
 .search-livre >  button {
     color: rgb(10, 167, 237, 1);
     border-color: rgb(10, 167, 237, 1);
 }
-.search-livre > .input{
-    margin: 0 10px;
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 8px 10px 0;
-}
-.search-livre > .input:hover{
-    border: none;
-}
+
 .search-livre > .input > input{
-    border: none;
+    border: 1px solid black;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
+
 .search-livre > .input > i{
     padding-top: 5px;
 }
+
 .search-rubrique > .space-ecrivains > button{
     margin: 0 5px;
 }
+
 .search-rubrique > .space-ecrivains > .genre{
     background-color: rgb(10, 167, 237, 1);
     color: white;
 }
+
 .search-rubrique > .space-ecrivains > .ecrire{
     background-color: rgba(247, 212, 8, 1);
     color: rgb(20, 19, 19);
 }
+
+/*Les sections de la page ~ première section*/
+
 section{
+    background-color: rgba(0, 25, 40, 1)
+}
+
+.section-1{
     background-color: rgba(0, 25, 40, 1);
     width: 100%;
     padding: 0px 29.8px 0px 29.8px;
-    height: 100vh;
+    height: 65vh;
 }
+
 section > main {
     background-repeat: no-repeat;
     background-image: url(../public/photo.jpg);
     background-size: 400px;
     background-position: center;
 }
+
 .section-1 > p{
     width: 246px;
     height: 30px;
@@ -187,6 +220,7 @@ section > main {
     font-weight: 400;
     font-size: 20px;
 }
+
 .section-1 > p::before{
     content: '';
     background-color: rgba(247, 212, 8, 1);
@@ -195,7 +229,8 @@ section > main {
     height: 15px;
     margin-right: 4px;
 }
-section > div{
+
+.section-1 > div{
     height: 50vh;
     box-sizing: border-box;
     padding-bottom: 10px;
@@ -204,6 +239,7 @@ section > div{
     background-size: 800px;
     background-repeat: no-repeat;
 }
+
 section > div > h1{
     font-size: 30px;
     font-weight: 700;
@@ -212,6 +248,7 @@ section > div > h1{
     color: white;
     margin-left: 100px;
 }
+
 section > div > a.show-more{
     position: relative;
     left: 700px;
@@ -221,7 +258,9 @@ section > div > a.show-more{
     border: 1px solid rgba(247, 212, 8, 1);
     padding: 5px;
     border-radius: 10px;
+    z-index: 10;
 }
+
 .section-1 > div > div > a.humore{
     margin-left: 10px;
     border: 1px solid rgba(247, 212, 8, 1);
@@ -230,21 +269,492 @@ section > div > a.show-more{
     color: rgba(247, 212, 8, 1);
     font-weight: 600;
 }
+
 .section-1 > div > div.flex{
     display: flex;
     margin-top: -25px;
     align-items: center;
 }
+
 .section-1 > div > div > svg {
     margin-left: 100px;
     width: 15px;
     margin-right: 10px;
     height: 15px;
 }
+
 .section-1 > div > div > span{
     font-weight: 900;
     color: gray;
 }
+
 section > p{
     margin-left: 35px;
+}
+
+/*Les section de la page ~ section 2*/
+
+.section-2{
+    margin-top: -20px;
+    width: 100%;
+    padding: 0px 29.8px 0px 29.8px;
+}
+
+.section-2 > p{
+    height: 30px;
+    padding: 3px 15px 3px 15px;
+    gap: 10px;
+    border: 0px 0px 0px 4px;
+    opacity: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 55px;
+}
+
+.section-2 > p::before{
+    content: '';
+    background-color: rgba(247, 212, 8, 1);
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.section-2 > div > div > img{
+    width: 145px;
+    height: 210px;
+    gap: 0px;
+    border-radius: 4.36px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-left: 100px;
+}
+
+.grid-parent > div{
+    margin: 0 -30px;
+}
+
+.grid-parent > div > div > h4{
+    color: rgb(10, 167, 237, 1);
+}
+
+.grid-parent > div > div > p{
+    color: rgb(76, 75, 75);
+    margin-top: 20px;
+    width: 170px;
+    height: 80px;
+    top: 29px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.grid-parent > div > div > svg{
+    width: 15px;
+    margin-right: 10px;
+    height: 15px;
+}
+
+.grid-parent > div > div > span{
+    margin: 0 8px;
+    color: rgb(76, 75, 75);
+}
+
+.grid-parent > div > div > a{
+    margin-left: 5px;
+    color: rgba(247, 212, 8, 1);
+    border: 1px solid rgba(247, 212, 8, 1);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+/* Composant ~ Afficher plus*/
+
+.component{
+    text-align: center;
+    background-color: rgba(0, 25, 40, 1);
+    background-color: rgba(0, 25, 40, 1);
+    width: 100%;
+    padding: 0px 29.8px 0px 29.8px;
+    padding: 50px 29.9px ;
+}
+
+/*Les sections de la page ~ section 3*/
+
+.section-3{
+    width: 100%;
+    padding: 0px 29.8px 0px 29.8px;
+    height: 98vh;
+    margin-top: -20px;
+}
+
+.section-3 > p{
+    height: 30px;
+    padding: 3px 15px 3px 15px;
+    gap: 10px;
+    border: 0px 0px 0px 4px;
+    opacity: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 55px;
+}
+
+.section-3 > p::before{
+    content: '';
+    background-color: rgba(247, 212, 8, 1);
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.section-3 > div > div > img{
+    width: 145px;
+    height: 210px;
+    gap: 0px;
+    border-radius: 4.36px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.grid-parent-2{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-left: 100px;
+}
+
+.grid-parent-2 > div{
+    margin: 0 -30px;
+}
+
+.grid-parent-2 > div > div > h4{
+    color: rgb(10, 167, 237, 1);
+}
+
+.grid-parent-2 > div > div > p{
+    color: rgb(76, 75, 75);
+    margin-top: 20px;
+    width: 170px;
+    height: 80px;
+    top: 29px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.grid-parent-2 > div > div > svg{
+    width: 15px;
+    margin-right: 10px;
+    height: 15px;
+}
+
+.grid-parent-2 > div > div > span{
+    margin: 0 8px;
+    color: rgb(76, 75, 75);
+}
+
+.grid-parent-2 > div > div > a{
+    margin-left: 5px;
+    color: rgba(247, 212, 8, 1);
+    border: 1px solid rgba(247, 212, 8, 1);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+/*Les section de la page ~ section-4*/
+
+.section-4{
+    background-color: white;
+}
+
+.section-4 > div > p{
+    height: 30px;
+    padding: 3px 15px 3px 15px;
+    gap: 10px;
+    border: 0px 0px 0px 4px;
+    opacity: 0px;
+    color: rgba(1, 56, 84, 1);
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.section-4 > div > p::before{
+    content: '';
+    background-color: rgba(247, 212, 8, 1);
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.section-4 > div > div{
+    background-image: url(../public/femme.png);
+    background-size: 800px;
+    background-position: center 1px;
+    background-repeat: no-repeat;
+    gap: 0px;
+    border-radius: 9.95px 0px 0px 0px;
+    opacity: 0px;
+    width: 840px;
+    height: 300px;
+    margin-left: 90px;
+}
+
+/*Les section de la page ~ section-5*/
+
+.section-5{
+    margin-top: 60px;
+    width: 100%;
+    padding: 0px 29.8px 0px 29.8px;
+}
+
+.section-5 > p{
+    height: 30px;
+    padding: 3px 15px 3px 15px;
+    gap: 10px;
+    border: 0px 0px 0px 4px;
+    opacity: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 55px;
+}
+
+.section-5 > p::before{
+    content: '';
+    background-color: rgba(247, 212, 8, 1);
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.section-5 > div > div > img{
+    width: 145px;
+    height: 210px;
+    gap: 0px;
+    border-radius: 4.36px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.grid-parent-5{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-left: 100px;
+}
+
+.grid-parent-5 > div{
+    margin: 0 -30px;
+}
+
+.grid-parent-5 > div > div > h4{
+    color: rgb(10, 167, 237, 1);
+}
+
+.grid-parent-5 > div > div > p{
+    color: rgb(76, 75, 75);
+    margin-top: 20px;
+    width: 170px;
+    height: 80px;
+    top: 29px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.grid-parent-5 > div > div > svg{
+    width: 15px;
+    margin-right: 10px;
+    height: 15px;
+}
+
+.grid-parent-5 > div > div > span{
+    margin: 0 8px;
+    color: rgb(76, 75, 75);
+}
+
+.grid-parent-5 > div > div > a{
+    margin-left: 5px;
+    color: rgba(247, 212, 8, 1);
+    border: 1px solid rgba(247, 212, 8, 1);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+/*Les section de la page ~ section-6*/
+
+.section-6{
+    background-color: white;
+}
+
+.section-6 > p{
+    font-weight: bold;
+}
+
+.section-6 > p::before{
+    content: '';
+    background-color: rgba(247, 212, 8, 1);
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.section-6 > div > div > div > div > div > div > img{
+    width: 40px;
+    height: 50px;
+    gap: 40px;
+    opacity: 0px;
+    border-radius: 3px;
+}
+
+.parent-troisième{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .see-icon{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    bottom: 25px;
+}
+
+.number{
+    position: relative;
+    bottom: 25px;
+    margin-right: 8px;
+    z-index: 100;
+}
+
+.string{
+    position: relative;
+    bottom: 25px;
+    font-weight: bold;
+}
+
+.parent-deuxième > .span-1{
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.father{
+    box-shadow: 1px 1px 5px grey;
+    width: 180px;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+
+.old-father{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8px;
+}
+
+/*La partie div*/
+.div{
+    width: 100%;
+    padding: 0 28px;
+    height: 30px;
+    background-color: rgba(247, 212, 8, 1);
+    margin-top: 20px;
+}
+
+/*footer*/
+
+footer{
+    padding-top: 50px;
+    background-color: rgba(0, 25, 40, 1);
+    padding: 0 28px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+footer > div > img{
+    
+    width: 120px;
+    height: 50px;
+    margin-left: 450px;
+}
+
+footer > div > p{
+    text-align: center;
+    color: white;
+}
+
+footer > div > ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer > div > ul > li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+footer > div > ul > li > a{
+    color: rgba(247, 212, 8, 1);
+}
+
+.space-faq > li{
+    list-style-type: disc;
+    margin-right: 25px;
+    color: white;
+}
+
+.space-faq > li > a{
+    color: white;
+}
+
+.last-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-footer > div > form > p{
+    color: rgba(247, 212, 8, 1);
+}
+
+.last-footer > div > form > input{
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(10, 167, 237, 1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.last-footer > div > form > button{
+    padding: 3px 3px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(10, 167, 237, 1);
+}
+
+.follow{
+    color: rgba(247, 212, 8, 1);
+}
+
+.social > i{
+    color: white;
+    margin-right: 10px;
+}
+
+.copy-right > .p1{
+    color: white;
+    font-size: 15px;
+}
+
+.copy-right > .p2{
+    color: rgb(213, 205, 205);
+    font-size: 15px;
 }
